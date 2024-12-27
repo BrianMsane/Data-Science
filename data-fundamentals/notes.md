@@ -137,3 +137,11 @@ Data storytelling is the process of converting data analyses into a simple, unde
 ### Types of visualizations
 
 Charts convey different meanings so it is important to select the best one to use in your visualization.
+
+Types of data comparision
+
+- Relative proportion is the amount or quantity of a subset present in the population of all data points. Graphics used here are pie charts, column charts
+- Ranking is the relationship between a set of items, in which one item is ranked higher, lower, or the same compared to other items.
+- Time is series of data point that are sequenced in time order
+- Frequency is the number of times a certain event happens.
+- Correlation is teh relationship between two random variables, which are typcically related in a linear way
