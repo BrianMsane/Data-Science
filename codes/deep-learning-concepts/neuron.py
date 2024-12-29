@@ -1,7 +1,8 @@
 from typing import Union
+from .activation_functions import sigmoid
 
 
-def neuron(inputs: list, weights: list, bias: Union[int, float]):
+def neuron(input: float, weight: float, bias: float):
     output = 0
     for input, weight in zip(inputs, weights):
         output += input * weight
