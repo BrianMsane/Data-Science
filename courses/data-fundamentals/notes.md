@@ -93,7 +93,7 @@ This is much more important when a use case is under uncertainty.
 
 ### Prescriptive analytics
 
-The final one is prescriptive analytics which combines all the insights from previous analyses to determing a course of action to take to address a problem or make a decision. Mainly, the purpose of this one is to prescribe what action to take to eliminate a future problem or take full advantage of an opportunity. 
+The final one is prescriptive analytics which combines all the insights from previous analyses to determing a course of action to take to address a problem or make a decision. Mainly, the purpose of this one is to prescribe what action to take to eliminate a future problem or take full advantage of an opportunity.
 Prescriptive analytics uses advanced tools and technologies, like machine learning, business rules, and algorithms. This make it sophisticate to implement and manage.
 
 ## Data Analytics process
@@ -102,15 +102,14 @@ Data analysis is the process of collecting, cleaning, and tranforming data to ob
 determing the metrics to measure performance.
 
 - Collect:
-This step is all about collecting the right data and just enough data for the project's questions or problems we want to research. First determint the data you can use from any existing sources and databases. Next you need to figure out if you need new resources to ensure that you have enough data.
+  This step is all about collecting the right data and just enough data for the project's questions or problems we want to research. First determint the data you can use from any existing sources and databases. Next you need to figure out if you need new resources to ensure that you have enough data.
 - Clean:
-Data cleaning is the process of detecting and correcting missing and/or inaccureate records from the dataset. Ensure that the data is in a usable format. This involves search for outliers, dealing with null values, and looking for incorrect input. Use data wrangling to ensuer its in a usable format. Search for duplicate records and remove then if any.
-Do keep in mind that your cleaning procedure needs to be based on the underlying context and this means that in once case you may choose to input missing values using the mean and in some you might just be required to drop them entirely. Data cleaning usually consumes much of the time.
+  Data cleaning is the process of detecting and correcting missing and/or inaccureate records from the dataset. Ensure that the data is in a usable format. This involves search for outliers, dealing with null values, and looking for incorrect input. Use data wrangling to ensuer its in a usable format. Search for duplicate records and remove then if any.
+  Do keep in mind that your cleaning procedure needs to be based on the underlying context and this means that in once case you may choose to input missing values using the mean and in some you might just be required to drop them entirely. Data cleaning usually consumes much of the time.
 - Analyze:
-Use various statistical and analytical methods or tools to analyze the data. Problem solving and curiosity bears the optimal results.
+  Use various statistical and analytical methods or tools to analyze the data. Problem solving and curiosity bears the optimal results.
 - Visualize:
-You need to intepret the results of analysis in a graphically and visually appealing manner. Data visuals help in comparing datasets and observing relationships.
-
+  You need to intepret the results of analysis in a graphically and visually appealing manner. Data visuals help in comparing datasets and observing relationships.
 
 ## Extract, transform, and load (ETL)
 

@@ -8,7 +8,6 @@ Being curious is one characteristic of data scientist. Normally and typically, t
 
 First ask "Why" and get the answer for it, the answer leads you to the next "Why" to ask and this iterates five times. It is important to note that you might not reach the cause after the first five questions so you need to repeat the question and that happens in a case whereby you have multiple roots or causes for an effect.
 
-
 ## Data Science Methodologies
 
 A methodology is a general strategy that guides activities within a process. It provides a framework that can guide data scientist how to proceed with whatever methods and processes they will use to obtain answers and results. The three classical methodologies used are:
@@ -21,4 +20,4 @@ They use data mining methods, best suited for strucutured data, useful for descr
 
 ## CRISP-DM
 
-This is a flexible and comprehensive data science approach that can be used by all industries. It has six phases
+This is a flexible and comprehensive data science approach that can be used by all industries. It has six phases which has arrows which points the flow with which the operations are conducted. Note that this flow is not necessarily strict but it is good practice to flow it.
