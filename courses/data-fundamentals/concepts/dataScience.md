@@ -1,7 +1,8 @@
 # Concepts
 
 - Regression
-- Statistics (Correlation)
+- Generalization and Estimation
+- Statistics (Correlation, Hypothesis testing, Distributions)
 - Classification (Binary and Multi-class)
 - Neural networks
 - Machine Learning Algorithmss
@@ -11,6 +12,7 @@
 - Time series modeling
 - Reinforcement learning
 - Natural Language Processing
+- Computer Vision
 - Recommendation engines
 - Hyper-parameter tuning (Manual and Automated)
 - Model deployment (Serverless architecture)
