@@ -37,4 +37,4 @@
 ## Data Scientists Types
 
 - Type A data scientists focus on Analysis: understanding and deriving insights from data.
-- Type B data scientists focus on Building: in addition to being Type A, they possess strong programming skills.
+- Type B data scientists focus on Building: in addition to being Type A, they possess strong programming skills. They build systems and make data science work in production.
