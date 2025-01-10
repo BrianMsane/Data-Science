@@ -33,3 +33,8 @@
 - Tensorflow
 - Scikit learn
 - Transformers
+
+## Data Scientists Types
+
+- Type A data scientists focus on Analysis: understanding and deriving insights from data.
+- Type B data scientists focus on Building: in addition to being Type A, they possess strong programming skills.
