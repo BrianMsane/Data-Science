@@ -1,11 +1,11 @@
 # The Pipeline of a Machine Learning Project
 
-- 1. Gathering Data
-- 2. Finding the space of possible solutions. Generate hypothesis
-- 3. Characterizing the objectives (what makes a good solution)
-- 4. Finding the learning algorithm
-- 5. Running the algorithm
-- 6. Validation of the results
+1. Gathering Data
+2. Finding the space of possible solutions. Generate hypothesis
+3. Characterizing the objectives (what makes a good solution)
+4. Finding the learning algorithm
+5. Running the algorithm
+6. Validation of the results
 
 In all these steps, except for the fifthe - running the algorithm, have to be done by a human rather than a machine.
 
