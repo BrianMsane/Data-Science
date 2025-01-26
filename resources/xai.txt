@@ -1,4 +1,4 @@
-====================================================================================
+
 Explainable AI, XAI (white-box)
 -------------------
 require specialized knowledge
@@ -11,40 +11,40 @@ traditional AI systems have significant transparency limitation this means it is
 
 Trust worthy factors
 ---------------------
-Fairness (no biasness)
-Robustness (performance on new data)
-Interpretability (cause of decision)
-Explanability ()
+- Fairness (no biasness)
+- Robustness (performance on new data)
+- Interpretability (cause of decision)
+- Explanability ()
 
 need for  XAI
 --------------
-explain to justify (results)
-explain to control (consistency of output)
-explain to improve (improve the system)
-explain to discover (discover new facts for the problem, dynamic problems needs dynamic solutions)
+- explain to justify (results)
+- explain to control (consistency of output)
+- explain to improve (improve the system)
+- explain to discover (discover new facts for the problem, dynamic problems needs dynamic solutions)
 
 principles of XAI
 ------------------
-Explanation
-meaningful
-accuracy (explanation accuracy, decision accuracy)
-knowledge limits
+- Explanation
+- meaningful
+- accuracy (explanation accuracy, decision accuracy)
+- knowledge limits
 
 main methods of XAI
 ------------------
-prediction accuracy using lime
-traceability using DeepLIFT (deep learning importance
+- prediction accuracy using lime
+- traceability using DeepLIFT (deep learning importance)
 
 classifications of XIA methods
 --------------
-knowledge-driven XAI(domain)
-data-driven XAI(the data you are using)
+- knowledge-driven XAI(domain)
+- data-driven XAI(the data you are using)
 
 benefits of XAI
 ----------------
-enhanced accountability
-improved decision quality ( provide insights into how decisions are made)
-increased user adoption
+- enhanced accountability
+- improved decision quality ( provide insights into how decisions are made)
+- increased user adoption
 
 =========================================================================================================
 
@@ -52,12 +52,12 @@ increased user adoption
 outcome of technological advancements (AI in the workplace)
 ----------------------------------
 
-job creation and displacement
-skills demand shift
-globalization and trade
-disruption in education systems
-social and cultural shifts
-economic growth and production
+- job creation and displacement
+- skills demand shift
+- globalization and trade
+- disruption in education systems
+- social and cultural shifts
+- economic growth and production
 
 ===========================================================================================================
 big data feature selection algorithm using parallel and distributed computing under Hadoop and the Apache Spark framework
@@ -65,23 +65,6 @@ big data feature selection algorithm using parallel and distributed computing un
 
 minimum-redundancy-maximum relevance technique
 
-
-============================
-
-competition
----
-
-wildfire prediction challenge
-zimbambwe dataset (can you predict the burned area of wildfire - from 2014 to 2016)
-wisdom Dlamini paper about Bayesian belief network for Swaziland, 2010
-
-security concerns on the cloud  based platforms like google colab! so let's have compiler design so we can be able to build some environment which we are in control of.
-root mean squared error metric (regression problem)
-
-
-
-
-====================================================================
 
 
 data bias, algorithmic bias, etc.,
@@ -99,4 +82,3 @@ How lime works
 3. predict perturbations. use the original model to predict the outcomes of the for these perturbed samples
 4. Fit an interpretable model: train a simpler, interpretable model on the perturbed samples and their predictions, this interpretable model approximates the behavior of the complex model locally
 5. Explain the prediction: The coefficients of the interpretable model provide insights into how the original model arrived at its prediction for the chosen data point
-
