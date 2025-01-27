@@ -1,8 +1,10 @@
-from activation_functions import sigmoid
+from activation_functions import sigmoid, relu, hyperbolic_tangent
 from errors import total_error
 
 
-def neuron(inputs: list[float], weights: list[float], bias: float):
+def neuron(
+    inputs: list[float], weights: list[float], bias: float, function: str = "relu"
+):
     """Each neuron in a nerual network does the following:
     1. Multiply the inputs it gets with its weight
     2. Adds a bias
@@ -11,7 +13,14 @@ def neuron(inputs: list[float], weights: list[float], bias: float):
     output = 0
     for input, weight in zip(inputs, weights, strict=True):
         output += input * weight
-    return sigmoid(output + bias)
+    if function == "relu":
+        res = relu(output + bias)
+    elif function == "tanh":
+        res = hyperbolic_tangent(output + bias)
+    else:
+        res = sigmoid(output + bias)
+
+    return res
 
 
 def layer_neuron(inputs: list, weights: list, biases: list[float]):
