@@ -1,4 +1,5 @@
 from typing import Callable
+import inspect
 
 
 class Tool:
