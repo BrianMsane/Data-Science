@@ -63,7 +63,7 @@ def tool(func):
             if hasattr(param.annotation, "__name__")
             else str(param.annotation)
         )
-        arguments.append(param.name, annotation_name)
+        arguments.append((param.name, annotation_name))
 
     return_annotation = signature.return_annotation
     if return_annotation is inspect._empty:
