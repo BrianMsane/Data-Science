@@ -7,7 +7,7 @@
 - Transformers: Encoder and decoder blocks and internal workings
 - Self-Attention
 - Maked Attention
-- Multi-headed Attention
+- Multi-head Attention
 - Encoder-decoder models
 - Encoder-only models
 - Decoder-only models (Generative models)
