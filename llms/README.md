@@ -6,7 +6,7 @@
 - Attention with RNNs
 - Transformers: Encoder and decoder blocks and internal workings
 - Self-Attention
-- Maked Attention
+- Maked-self Attention
 - Multi-head Attention
 - Encoder-decoder models
 - Encoder-only models
