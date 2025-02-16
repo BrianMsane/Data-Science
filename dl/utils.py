@@ -1,10 +1,10 @@
-from activation_functions import sigmoid, relu, hyperbolic_tangent, linear, softmax
+from activation_functions import sigmoid, relu, hyperbolic_tangent, linear
 from typing import Literal
 
 
 def activation_function(
     input: int | float,
-    function: Literal["relu", "sigmoid", "tanh", "linear", "softmax"] = "relu",
+    function: Literal["relu", "sigmoid", "tanh", "linear"] = "relu",
 ):
     """
     Pass the result of the summation through and activation function
@@ -19,10 +19,6 @@ def activation_function(
         output = relu(output)
     elif function == "tanh":
         output = hyperbolic_tangent(output)
-    elif function == "sigmoid":
-        output = sigmoid(output)
-    elif function == "softmax":
-        output = softmax(output)
     else:
-        pass
+        output = sigmoid(output)
     return output

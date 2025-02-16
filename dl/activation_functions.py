@@ -19,5 +19,9 @@ def hyperbolic_tangent(x: float | int) -> float:
 
 
 def softmax(logits: list[float | int]):
+    """Computed for the entire layer rather than an individual neuron
+    Args:
+        logits(list): The predictions per class
+    """
     exponetials = [exp(pred - max(logits)) for pred in logits]
     return [j / sum(exponetials) for j in exponetials]
