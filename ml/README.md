@@ -1,4 +1,19 @@
-# Types of ML Techniques
+# The Pipeline of a Machine Learning Project
+
+1. Gathering Data
+2. Finding the space of possible solutions. Generate hypothesis
+3. Characterizing the objectives (what makes a good solution)
+4. Finding the learning algorithm
+5. Running the algorithm
+6. Validation of the results
+
+In all these steps, except for the fifthe - running the algorithm, have to be done by a human rather than a machine.
+
+The third step introduces the concept of a loss function which can be generally viewed as the difference between the prediction and the actual data values. The more we make mistakes, the higher the loss function and the opposite is true for matching prediction. Typically, we opt for the lowest loss function possible and a solution which gives us that is then regarded as a good solution. We usually employ optimization techniques to find the best solution; this is usually done at the process of running the chosen algorithm.
+
+## Training set error vs testing set error
+
+## Types of ML Techniques
 
 - Supervised Learning.
 
