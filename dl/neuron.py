@@ -1,28 +1,23 @@
-from activation_functions import sigmoid, relu, hyperbolic_tangent
-from typing import Literal
+from utils import activation_function
 
 
 def neuron(
     inputs: list[float],
     weights: list[float],
     bias: float,
-    function: Literal["relu", "sigmoid", "tanh"] = "relu",
 ):
-
-    output = (
+    summation = (
         sum(input * weight for input, weight in zip(inputs, weights, strict=True))
         + bias
     )
-    if function == "relu":
-        output = relu(output)
-    elif function == "tanh":
-        output = hyperbolic_tangent(output)
-    else:
-        output = sigmoid(output)
-    return output
+    return activation_function(summation, "sigmoid")
 
 
-def layer_neuron(inputs: list, weights: list, biases: list[float]):
+def layer_neuron(
+    inputs: list,
+    weights: list,
+    biases: list[float],
+):
     """Run all the neurons that are in the layer and get its output"""
     layer_output = []
     for weights, bias in zip(weights, biases, strict=True):
