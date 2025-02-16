@@ -7,6 +7,4 @@ disable =
     missing-module-docstring,
     missing-function-docstring,
     missing-method-docstring,
-    too-few-public-methods,
-    too-many-arguments
-    broad-except
+

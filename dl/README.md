@@ -81,6 +81,13 @@ Different types of activation functions
 
    Softmax amplifies differences in the input vector. Even small differences in the input values can lead to substantial differences in the output probabilities, with the highest input value(s) tending to dominate in the resulting probability distribution. Because it amplifies differences, it can be sensitive to outliers or extreme values.
 
-## Gradient Descent and its Varients
+## Gradient Descent, its Varients, and Other Optimizers
+
+- Stochastic Gradient Descent
+- Mini-batch GD
+- Other Optimizers
+  - Adam
 
 ## Backpropagation
+
+Intuitively, the process of backpropagation can be defined as follows.
