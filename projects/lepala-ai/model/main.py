@@ -6,7 +6,14 @@ import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
 
-def main(path: str):
+def main(path: str, quant: bool = True):
+    """
+    Run all needed operations
+
+    Args:
+        path(str): The path of the notebook to be executed - this does everything we need
+        quant(bool): Specify if we want to quantisize the model or not
+    """
 
     try:
         with open(path, "r") as f:

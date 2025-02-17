@@ -13,3 +13,7 @@ datasets
 evaluate
 diffusers
 peft
+python-dotenv
+nbformat
+nbconvert
+quanto
