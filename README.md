@@ -17,7 +17,7 @@
 - Hyper-parameter tuning (Manual and Automated)
 - Model deployment (Serverless architecture)
 - Transformer models
-- Transfer leaning
+- Transfer learning
 - Explainable AI
 
 ## Resources
