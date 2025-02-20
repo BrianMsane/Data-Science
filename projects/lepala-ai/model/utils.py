@@ -1,12 +1,42 @@
 from datasets import Dataset
 import string
 import re
+import yaml
 from transformers import AutoTokenizer
+from typing import Literal
 
 
 def load_tokenizer(checkpoint: str):
     """Load the tokenizer specific to the model"""
     return AutoTokenizer.from_pretrained(checkpoint)
+
+
+def convert_to_chatml(example):
+    return {
+        "messages": [
+            {"role": "user", "content": example["input"]},
+            {"role": "assistant", "content": example["output"]},
+        ]
+    }
+
+
+def convert_to_alpaca(example):
+    with open("./prompts.yaml", "r") as f:
+        prompts = yaml.safe_load(f)
+
+    return prompts["alpaca"].format(
+        example["instruction"],
+        example["input"],
+        example["response"],
+    )
+
+
+def format_messages(
+    example: dict, format_style: Literal["chatml", "alpaca"] = "alpaca"
+):
+    if format_style == "alpaca":
+        return convert_to_alpaca(example)
+    return convert_to_chatml(example)
 
 
 def split_dataset(dataset: Dataset, test_size: float = 0.2):
