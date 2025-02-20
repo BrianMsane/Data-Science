@@ -1,28 +1,24 @@
 from datasets import Dataset
 import string
 import re
+from transformers import AutoTokenizer
 
 
-def load_dataset(name: str):
-    """Load the dataset"""
+def load_tokenizer(checkpoint: str):
+    """Load the tokenizer specific to the model"""
+    return AutoTokenizer.from_pretrained(checkpoint)
+
+
+def split_dataset(dataset: Dataset, test_size: float = 0.2):
+    return dataset["train"].train_test_split(test_size=test_size, seed=42, shuffle=True)
 
 
 class TextPreprocessor:
     """Cleaning Sentences"""
 
-    def __init__(
-        self,
-        lemmatize: bool = False,
-        stop: bool = False,
-        lower: bool = False,
-        correct: bool = False,
-        stem: bool = False,
-    ) -> None:
-        """Constructor"""
-        self.lemmatize = lemmatize
-        self.stem = stem
-        self.stop_remove = stop
+    def __init__(self, lower: bool = False, emoji: bool = True) -> None:
         self.lower = lower
+        self.emoji = emoji
 
     def clean_text(self, text: str) -> str:
         """Clean the given text by applying necessary methods"""
@@ -32,20 +28,15 @@ class TextPreprocessor:
                 text = text.lower()
             text = self.remove_extra_spaces(text)
             text = self.remove_links(text)
-            text = self.remove_emojis(text)
+            if self.emoji:
+                text = self.remove_emojis(text)
             text = self.remove_emoticons(text)
             text = self.remove_tags(text)
             text = self.remove_unicode_character(text)
             text = self.remove_punctuation_marks(text)
-            if self.stop_remove:
-                text = self.remove_stopwords(text)
             text = self.remove_numbers(text)
             if self.correct:
                 text = self.correct_spelling(text)
-            if self.lemmatize:
-                text = self.lemmatize_words(text)
-            if self.stem:
-                text = self.stem_words(text)
             return text
         except Exception as e:
             raise e
@@ -78,10 +69,6 @@ class TextPreprocessor:
 
     def remove_unicode_character(self, text: str) -> str:
         return re.sub(r"[^\x00-\x7F]+", "", text)
-
-    def lemmatize_words(self, text: str) -> str:
-        lemmatized = [self.lemmatizer.lemmatize(word) for word in text.split()]
-        return " ".join(lemmatized)
 
     def stem_words(self, text: str) -> str:
         stem = [self.stemmer.stem(word) for word in text.split()]
