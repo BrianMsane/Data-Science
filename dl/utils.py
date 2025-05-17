@@ -1,5 +1,6 @@
-from activation_functions import sigmoid, relu, hyperbolic_tangent, linear
 from typing import Literal
+
+from activation_functions import hyperbolic_tangent, linear, relu, sigmoid
 
 
 def activation_function(

@@ -1,10 +1,11 @@
 """LLM Function calling"""
 
 # from config import env
-import os
-import dotenv
 import json
+import os
 from typing import Literal
+
+import dotenv
 from openai import OpenAI
 
 dotenv.load_dotenv()

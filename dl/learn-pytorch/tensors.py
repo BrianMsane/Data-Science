@@ -1,8 +1,9 @@
 """Working with pytorch tensors"""
 
-import torch
-import numpy as np
 from pprint import pprint
+
+import numpy as np
+import torch
 
 # TO-DO:
 # set the seed for deterministic tensors so you can get predictable scores
