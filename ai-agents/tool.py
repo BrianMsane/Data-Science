@@ -101,7 +101,7 @@ calculator = Tool(
     "calculator",
     "Multiply two numbers",
     calculator,
-    [{"a": "int", "be": "int"}],
+    [{"a": "int", "b": "int"}],
     "int",
 )
 

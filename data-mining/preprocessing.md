@@ -8,12 +8,12 @@ It is no secret that the data mining techniques like clustering, classification,
 
 There are several data preprocessing techniques which include:
 
-- [<strong>Data cleaning</strong>] can be applied to clean the data by filling missing values, smooting the noisy data, resolving inconsistency, and removing outliers. To remove noisy data we can use binning, clustering and many other techniques while regression can be use to smoothen the noise.
+- **Data cleaning** can be applied to clean the data by filling missing values, smooting the noisy data, resolving inconsistency, and removing outliers. To remove noisy data we can use binning, clustering and many other techniques while regression can be use to smoothen the noise.
 
-- [<strong>Data integration</strong>] merges data from multiple sources into a coherent data source such as a data warehouse.
-- [<strong>Data reduction.</strong>] can reduce the size by, for instance, aggregating, eliminating redundant features, or clustering.
+- **Data integration** merges data from multiple sources into a coherent data source such as a data warehouse.
+- **Data reduction.** can reduce the size by, for instance, aggregating, eliminating redundant features, or clustering.
 
-- [<strong>Data transformations</strong>] can be applied where data are scaled to fall within a smaller range like 0.0 to 1.0 or -1 to 1. This can improve the accuracy and efficiency of data mining algorithms involving distance measurements.
+- **Data transformations** can be applied where data are scaled to fall within a smaller range like 0.0 to 1.0 or -1 to 1. This can improve the accuracy and efficiency of data mining algorithms involving distance measurements.
 
 These techniques are not mutually exclusive; they may work together depending on the data we're working on. For example, data cleaning can involve transformations to correct wrong data such as by transforming data fields into a common format. Data can be transformed through normalization, generalization, and so on.
 
@@ -81,4 +81,10 @@ It is importnat to note that in some cases missing values may not imply an error
 
 Noise is a random error or variance in a measured variable. Given a numeric variable such as price, how can we smooth out the data to remove the noise?
 
-[<strong>Binning</strong>]: Binning methods smooth a sorted data value by consulting its neighbor-hood; that is values around it. The sorted values are distributed into a number of buckets or bins. Because binning methods consult the neighborhood of values, they perform local smoothing.
+**Binning**: Binning methods smooth a sorted data value by consulting its "neighbor-hood"; that is values around it. The sorted values are distributed into a number of buckets or bins. Because binning methods consult the neighborhood of values, they perform local smoothing.
+
+**Regression**: Data smoothing can also be done by regression, a technique that conforms data values to a function. Linear regresssion involves finding the best line to fit two attributes so taht one attribute can be used to predict the other. Multiple linear regresssion is an extension of linear regression, where more than two variables are involved and the data are fit to a multidimensional surface.
+
+**Outlier analysis:** outliers maybe detected by clustering, for example similar values are organizes into clusters. Intuitively, values that fall outside the set of clusters may be considered outliers.
+
+Many data smooting methods are also used for data discretization ( a form of data transformation) and data reduction. For example, the binnging techniques described before reduce the number of distinct values per attribute. This acts as a form of data reduction for logic-based datda mining methods such as decision tree induction, which repeatedly makes value comparison on sorted data. Concept hierarchies are a form of data discretization that can also be used for data smoothing. A concept hierarchy for price, for example, may map real pirce values into expensiver, moderately priced, and expensive, thereby reducting the number of data values to be handled in the mining process.
