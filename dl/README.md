@@ -84,9 +84,11 @@ Different types of activation functions
 ## Gradient Descent, its Varients, and Other Optimizers
 
 - Stochastic Gradient Descent
-- Mini-batch GD
+- Batch Gradient Descent
+- Mini-batch Gradient Descent
 - Other Optimizers
   - Adam
+  - AdamW
 
 ## Backpropagation
 
