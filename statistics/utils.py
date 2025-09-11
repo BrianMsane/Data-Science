@@ -1,5 +1,4 @@
-"""Implement common forumas in statistics
-"""
+"""Implement common forumas in statistics"""
 
 import math
 

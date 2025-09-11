@@ -1,11 +1,17 @@
+import numpy as np
 from utils import activation_function
 
 
 def neuron(
-    inputs: list[float],
-    weights: list[float],
+    inputs: np.array,
+    weights: np.array,
     bias: float,
 ):
+    """
+    In deep learning, a neuron takes input and calculates the product of them with the weights
+    After that, at adds a bias into the sum of
+    To introduce non-linerarity, the neuron applies an activation function and the releases in outputs
+    """
     summation = (
         sum(input * weight for input, weight in zip(inputs, weights, strict=True))
         + bias
